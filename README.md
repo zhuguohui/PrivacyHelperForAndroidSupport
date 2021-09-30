@@ -124,5 +124,5 @@ public class MyCheckActivity extends CheckActivity {
 
 
 
-<img  src="./README.assets/demo.jpg" style="zoom:50%;" />
+<img  src="./README.assets/demo.jpg" style="width:500px;" />
 
