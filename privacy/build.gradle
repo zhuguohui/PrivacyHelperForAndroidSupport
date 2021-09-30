@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
 }
 
+
 android {
     compileSdk 30
 
@@ -26,6 +27,46 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
+apply plugin: 'maven-publish'
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+def versionName = "1.0.0"
+
+afterEvaluate {
+    publishing {
+        publications {
+            Production(MavenPublication) {
+                from components.release
+                // 使用方引用 implementation 'cn.com.jack:mavendemo:2.7.0-SNAPSHOT'
+                groupId = "com.trs.app"
+                artifactId = "privacy-check-support"
+                version = versionName
+                // 上传source，这样使用放可以看到方法注释
+                artifact generateSourcesJar
+            }
+        }
+        repositories {
+            // 定义一个 maven 仓库
+            maven {
+                allowInsecureProtocol = true
+                // 可以有且仅有一个仓库不指定 name 属性，会隐式设置为 Maven
+                // 根据 versionName 来判断仓库地址
+                url = 'http://mvn.devdemo.trs.net.cn/repository/maven-releases/'
+                // 仓库用户名密码
+                credentials {
+                    username = "admin"
+                    password = "r3j9ty"
+                }
+            }
+
+        }
+    }
+}
+
 
 dependencies {
 
