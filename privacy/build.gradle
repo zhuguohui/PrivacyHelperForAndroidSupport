@@ -4,12 +4,12 @@ plugins {
 
 
 android {
-    compileSdk 30
+    compileSdk 27
 
     defaultConfig {
 
         minSdk 19
-        targetSdk 30
+        targetSdk 27
         versionCode 1
         versionName "1.0"
 
@@ -34,7 +34,7 @@ task generateSourcesJar(type: Jar) {
     classifier 'sources'
 }
 
-def versionName = "1.0.1"
+def versionName = "1.0.4"
 
 afterEvaluate {
     publishing {
@@ -70,7 +70,7 @@ afterEvaluate {
 
 dependencies {
 
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
