@@ -1,0 +1,3 @@
+# PrivacyHelperForAndroidSupport
+
+用来完成隐私改造的库，可以在用户同意之前，拦截sdk的初始化。使项目快速的完成隐私改造。适配的是Android Support 依赖库
