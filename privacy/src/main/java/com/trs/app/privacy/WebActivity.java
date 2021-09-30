@@ -3,8 +3,8 @@ package com.trs.app.privacy;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.webkit.WebChromeClient;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
