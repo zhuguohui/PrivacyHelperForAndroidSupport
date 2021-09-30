@@ -18,8 +18,9 @@
 
 使用CheckApp 作为Application 。在**attachBaseContext** 方法中判断用户是否同意隐私协议，如果同意。则不hook系统。否则hook系统拦截activity的创建和ContentProvider的创建。一旦用户同意再初始化ContentProvider和相关的sdk。可以参考我以下文章
 
-[Android 控制 ContentProvider的创建]: https://blog.csdn.net/qq_22706515/article/details/120269561?spm=1001.2014.3001.5501
-[通过拦截 Activity的创建 实现APP的隐私政策改造]: https://blog.csdn.net/qq_22706515/article/details/119250771?spm=1001.2014.3001.5501
+[Android 控制 ContentProvider的创建](https://blog.csdn.net/qq_22706515/article/details/120269561?spm=1001.2014.3001.5501)
+
+[通过拦截 Activity的创建 实现APP的隐私政策改造](https://blog.csdn.net/qq_22706515/article/details/119250771?spm=1001.2014.3001.5501)
 
 
 
@@ -123,4 +124,4 @@ public class MyCheckActivity extends CheckActivity {
 
 
 
-<img src="E:/Desktop/demo.jpg" style="zoom:25%;" />
+<img src="E:/Desktop/demo.jpg" style="zoom:50%;" />
