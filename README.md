@@ -1,6 +1,6 @@
 # PrivacyHelper
 
-用来完成隐私改造的库，可以在用户同意之前，拦截sdk的初始化。使项目快速的完成隐私改造。适配的是Android Support 依赖库
+用来完成隐私改造的库，可以在用户同意之前，拦截sdk的初始化。使项目快速的完成隐私改造。支持Support和 AndroidX
 
 # 特点
 
@@ -46,9 +46,18 @@ allprojects {
 
 在需要使用的moudle中引入
 
+项目中如果使用**support**使用一下库
+
 ```groovy
   	//隐私权限拦截
     api 'com.trs.app:privacy-check-support:1.0.4'
+```
+
+项目中使用**AndroidX**使用一下库
+
+```groovy
+  	//隐私权限拦截
+    api 'com.trs.app:privacy-check-androidx:1.0.4'
 ```
 
 
