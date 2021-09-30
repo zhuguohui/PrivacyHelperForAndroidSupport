@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:background="#fff"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#030303"
+        android:text="个人隐私保护指引"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+    <ScrollView
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+            <TextView
+                android:textColor="#030303"
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/tv_content"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="内容由代码设置"
+
+                tools:ignore="HardcodedText,WebViewLayout" />
+    </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#aaa" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_disagree"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="不同意"
+            android:textColor="#797979"
+            android:textSize="16sp"
+            android:focusable="true"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+
+        <TextView
+            android:id="@+id/btn_agree"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="#B1070D"
+            android:textSize="16sp"
+            android:focusable="true" />
+    </LinearLayout>
+
+</LinearLayout>
