@@ -111,6 +111,18 @@ public class MyCheckActivity extends CheckActivity {
 }
 ```
 
+### 白名单
+因为框架会默认拦截所有activity的创建，如果你需要使用自定义的activity显示你的用户协议等内容，
+需要加入白名单。直接重写CheckActivity的onSetUnCheck即可
+
+```java
+    @Override
+    protected void onSetUnCheck() {
+        super.onSetUnCheck();
+        CheckApp.getApp().uncheck(WebActivity.class);
+    }
+
+```
 
 
 ## 注册Activity
