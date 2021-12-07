@@ -28,28 +28,7 @@
 
 ## 引入
 
-在项目根目录的build.gradle文件中配置研发中心的maven
-
-```groovy
-allprojects {
-    repositories {
-        google()
-        jcenter()
-     
-        //研发中心的maven库
-        maven {url 'http://mvn.devdemo.trs.net.cn/repository/maven-public/'}
-    }
-}
-```
-
-
-
-在需要使用的moudle中引入
-
-```groovy
-  	//隐私权限拦截
-    api 'com.trs.app:privacy-check-support:1.0.4'
-```
+下载文件作为依赖
 
 
 
