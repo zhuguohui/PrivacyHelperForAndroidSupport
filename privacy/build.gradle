@@ -55,11 +55,11 @@ afterEvaluate {
                 allowInsecureProtocol = true
                 // 可以有且仅有一个仓库不指定 name 属性，会隐式设置为 Maven
                 // 根据 versionName 来判断仓库地址
-                url = 'http://mvn.devdemo.trs.net.cn/repository/maven-releases/'
+                url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
                 // 仓库用户名密码
                 credentials {
-                    username = "admin"
-                    password = "r3j9ty"
+                    username = ManvenCenterUserName
+                    password = MavnCentralPassword
                 }
             }
 
