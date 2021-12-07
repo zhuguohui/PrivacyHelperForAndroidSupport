@@ -28,7 +28,7 @@
 
 ## 引入
 
-下载文件作为依赖
+下载文件作为依赖，注意AndroidX 需要使用androidX分支，support需要使用support分支
 
 
 
